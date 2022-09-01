@@ -22,7 +22,7 @@ header {
 			font-size: 50px;
 			color: hsl(291, 67%, 17%);
 			margin-bottom: 20px;
-			position: relative;
+
 		}
 		.text {
 			color: hsl(292, 27%, 50%);
@@ -30,10 +30,8 @@ header {
 	}
 }
 .first-grid {
-	position: absolute;
-	right: 260px;
 	max-height: 30vh;
-	max-width: 100vw;
+	max-width: 50vw;
 	display: grid;
 	gap: 30px;
 	grid-template-columns: repeat(3, 1fr);
@@ -116,14 +114,43 @@ header {
 	.wrap {
 		display: flex;
 		margin-bottom: 20px;
-		
 
 		.container {
 			display: flex;
 			flex-direction: column;
 			padding-top: 10px;
 			padding-left: 10px;
-			:nth-child(2){line-height: 25px;}
+			:nth-child(2) {
+				line-height: 25px;
+			}
 		}
+	}
+}
+
+@media (max-width: 1440px) {
+	header {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin-top: 2vh;
+
+		.rate .first-text {
+			font-size: 20px;
+		}
+	}
+	.first-grid {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		height: 200px;
+		width: 300px;
+	
+
+	}
+	.second-grid {
+		display: flex;
+		flex-direction: column;
 	}
 }
