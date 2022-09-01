@@ -17,37 +17,136 @@ header {
   margin: 50px;
 }
 header .rate {
-  margin: 30px;
-  padding: 10px;
-  width: 40vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 50px;
+  width: 50vh;
   height: 20vh;
+  margin-left: 25vh;
 }
 header .rate .first-text {
-  font-size: 40px;
-  color: hsl(290deg, 50%, 40%);
+  font-size: 50px;
+  color: hsl(291deg, 67%, 17%);
   margin-bottom: 20px;
   position: relative;
+}
+header .rate .text {
+  color: hsl(292deg, 27%, 50%);
 }
 
 .first-grid {
   position: absolute;
-  right: 20px;
-  height: 15vh;
-  width: 40vw;
+  right: 260px;
+  max-height: 30vh;
+  max-width: 100vw;
   display: grid;
-  gap: 10px;
+  gap: 30px;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
 }
 .first-grid .BestTech {
-  grid-column: 1/3;
-  grid-row: 1/4;
+  grid-column: 3/3;
+  grid-row: 1/1;
+  -webkit-transform: translateX(20px);
+          transform: translateX(20px);
 }
 .first-grid .report {
-  grid-column: 2/3;
-  grid-row: 2/4;
+  grid-column: 3/3;
+  grid-row: 2/3;
+  -webkit-transform: translateX(40px);
+          transform: translateX(40px);
 }
 .first-grid .reviews {
   grid-column: 3/3;
-  grid-row: 3/4;
+  grid-row: 3/3;
+  -webkit-transform: translateX(60px);
+          transform: translateX(60px);
+}
+.first-grid .reviews,
+.first-grid .report,
+.first-grid .BestTech {
+  background-color: hsl(295deg, 52%, 86%);
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.second-grid {
+  margin-top: 10vh;
+  display: grid;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  color: white;
+  height: 40vh;
+  width: 60vw;
+}
+.second-grid .colton {
+  background-color: hsl(291deg, 67%, 17%);
+  grid-column: 1/2;
+  grid-row: 1/1;
+}
+.second-grid .irene {
+  background-color: hsl(291deg, 67%, 17%);
+  grid-column: 2/2;
+  grid-row: 1/1;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+}
+.second-grid .anne {
+  background-color: hsl(291deg, 67%, 17%);
+  grid-column: 3/3;
+  grid-row: 1/1;
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
+}
+.second-grid .anne,
+.second-grid .irene,
+.second-grid .colton {
+  height: 300px;
+  width: 400px;
+  padding: 40px;
+  border-radius: 10px;
+}
+.second-grid .anne img,
+.second-grid .irene img,
+.second-grid .colton img {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+.second-grid .job {
+  color: pink;
+  margin-bottom: 20px;
+}
+.second-grid .wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+.second-grid .wrap .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.second-grid .wrap .container :nth-child(2) {
+  line-height: 25px;
 }/*# sourceMappingURL=style.css.map */
